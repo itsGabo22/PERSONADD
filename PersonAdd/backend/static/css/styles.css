@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #334155;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 12px 24px;
+    font-size: 18px;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+input[type="number"], input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    font-size: 16px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 8px;
+    background-color: #475569;
+    color: #f8fafc;
+    outline: none;
+}
+
+input[type="number"]::placeholder {
+    color: #94a3b8;
+}
+
+#camera-container, #advertisement-container {
+    background-color: #475569;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#camera-container:hover, #advertisement-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#camera {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#ad-image {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#ad-image:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+#adContainer {
+    display: none;
+    margin-top: 20px;
+}
+
+#adContainer p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#adContainer img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+#fullscreenButton {
+    display: none;
+    margin-top: 10px;
+    background-color: #10b981;
+    border-radius: 8px;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #475569;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
